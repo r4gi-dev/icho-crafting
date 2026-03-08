@@ -1,0 +1,26 @@
+body {margin:0; background:rgba(0,0,0,0); font-family:Arial; overflow:hidden;}
+#app {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:1100px; height:650px; background:#121212; border-radius:10px; color:white; display:none;}
+.header {height:50px; background:#1a1a1a; display:flex; align-items:center; justify-content:space-between; padding:0 20px;}
+.playerInfo {display:flex; align-items:center; gap:10px;}
+.playerLevel {background:#2a2a2a; padding:4px 8px; border-radius:4px; font-size:14px;}
+.xpbar {width:120px; height:8px; background:#222; border-radius:4px; overflow:hidden;}
+#xpfill {height:100%; width:0%; background:#3a7cff;}
+#xplabel {font-size:12px; color:#aaa;}
+.container {display:flex; height:600px;}
+.recipes {width:300px; background:#181818; padding:10px; overflow-y:auto;}
+#searchBar {width:100%; padding:8px; margin-bottom:10px; background:#222; border:none; color:white;}
+.recipeItem {padding:8px; background:#222; margin-bottom:5px; cursor:pointer; border-radius:4px;}
+.recipeItem:hover {background:#333;}
+.recipeLevel {float:right;}
+.details {flex:1; padding:20px; display:flex; flex-direction:column; justify-content:center; align-items:center;}
+#noSelection {font-size:22px; color:#777;}
+#itemDetails {width:100%;}
+.itemPreview {text-align:center;}
+.itemPreview img {width:80px; height:80px;}
+.materialItem {display:flex; justify-content:space-between; padding:4px 0;}
+.materialMissing {color:red;}
+.materialEnough {color:#7cff7c;}
+.craftControls {display:flex; gap:10px; margin-top:20px;}
+#craftAmount {width:80px; padding:6px; background:#222; border:none; color:white;}
+#craftBtn {padding:10px 20px; background:#3a7cff; border:none; color:white; cursor:pointer;}
+#craftBtn:hover {background:#5b93ff;}

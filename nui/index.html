@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <div class="header">
+        <div class="title">Crafting</div>
+        <div class="playerInfo">
+            <div class="playerLevel">Lv <span id="levelDisplay">1</span></div>
+            <div class="xpbar"><div id="xpfill"></div></div>
+            <div id="xplabel">0 XP</div>
+        </div>
+        <div class="close" onclick="closeUI()">✕</div>
+    </div>
+
+    <div class="container">
+        <div class="recipes">
+            <input id="searchBar" placeholder="Search item...">
+            <div id="recipeList"></div>
+        </div>
+
+        <div class="details">
+            <div id="noSelection">Select an item to craft</div>
+
+            <div id="itemDetails" style="display:none">
+                <div class="itemPreview">
+                    <img id="itemIcon">
+                    <h2 id="itemName"></h2>
+                </div>
+
+                <div class="itemInfo">
+                    <div>Time: <span id="time"></span></div>
+                    <div>XP: <span id="xp"></span></div>
+                    <div>Required Level: <span id="level"></span></div>
+                </div>
+
+                <div class="materials">
+                    <h3>Materials</h3>
+                    <div id="materials"></div>
+                </div>
+
+                <div class="craftControls">
+                    <input id="craftAmount" type="number" value="1" min="1">
+                    <button id="craftBtn">Craft</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
