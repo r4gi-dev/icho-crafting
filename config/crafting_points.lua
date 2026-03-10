@@ -16,7 +16,6 @@ Config.CraftingPoints = {
         },
 
         recipes = {
-            "repairkit",
             "lockpick"
         }
     }
